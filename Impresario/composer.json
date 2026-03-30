@@ -1,0 +1,11 @@
+{
+    "name": "impresario/writer-mode",
+    "description": "Impresario Writer Mode - Export to PDF and DOCX",
+    "require": {
+        "mpdf/mpdf": "^8.1",
+        "phpoffice/phpword": "^0.18.4"
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
