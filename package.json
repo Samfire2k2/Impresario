@@ -1,0 +1,17 @@
+{
+  "name": "impresario",
+  "version": "1.0.0",
+  "description": "Professional story planning application for writers",
+  "type": "module",
+  "scripts": {
+    "dev": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch",
+    "build": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.31"
+  },
+  "dependencies": {
+    "alpinejs": "^3.13.7"
+  }
+}
