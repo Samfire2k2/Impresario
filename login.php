@@ -58,9 +58,11 @@ if (isLoggedIn()) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impresario - Authentification</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo assetUrl('assets/css/style.css'); ?>">
 </head>
 <body class="auth-page">
+    <button id="theme-toggle-btn" class="theme-toggle-btn" title="Toggle dark/light mode">☀️</button>
+    
     <div class="auth-container">
         <div class="auth-box">
             <h1>Impresario</h1>
@@ -113,8 +115,8 @@ if (isLoggedIn()) {
         </div>
     </div>
     
-    <script src="assets/js/theme-manager.js"></script>
-    <script src="assets/js/dynamic-sizer.js"></script>
-    <script src="assets/js/auth.js"></script>
+    <script src="<?php echo assetUrl('assets/js/theme-manager.js'); ?>"></script>
+    <script src="<?php echo assetUrl('assets/js/dynamic-sizer.js'); ?>"></script>
+    <script src="<?php echo assetUrl('assets/js/auth.js'); ?>"></script>
 </body>
 </html>

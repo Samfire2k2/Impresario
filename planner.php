@@ -309,8 +309,9 @@ $pocketElements = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </div>
     
-    <script src="assets/js/theme-manager.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="<?php echo assetUrl('assets/js/theme-manager.js'); ?>"></script>
+    <script src="<?php echo assetUrl('assets/js/main.js'); ?>"></script>
+    <script src="<?php echo assetUrl('assets/js/drag-drop-scenes.js'); ?>"></script>
     <script>
         const PROJECT_ID = <?php echo json_encode($projectId); ?>;
         const INTRIGUE_ID = <?php echo json_encode($activeIntrigueId); ?>;
@@ -1215,8 +1216,8 @@ $pocketElements = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </div>
 
-    <script src="assets/js/theme-manager.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/drag-drop.js"></script>
+    <script src="<?php echo assetUrl('assets/js/theme-manager.js'); ?>"></script>
+    <script src="<?php echo assetUrl('assets/js/main.js'); ?>"></script>
+    <script src="<?php echo assetUrl('assets/js/drag-drop-scenes.js'); ?>"></script>
 </body>
 </html>

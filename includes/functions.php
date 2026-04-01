@@ -1,6 +1,12 @@
 <?php
 // Fonctions utilitaires pour l'application
 
+// Fonction pour générer un lien d'asset avec cache busting
+function assetUrl($path) {
+    $version = defined('ASSET_VERSION') ? ASSET_VERSION : time();
+    return $path . '?v=' . $version;
+}
+
 // Fonction pour nettoyer les entrées (trim sans échappement HTML)
 function sanitizeInput($input) {
     return trim($input);

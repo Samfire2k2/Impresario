@@ -100,7 +100,7 @@ $timelineEvents = $stmt->fetchAll();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($project['title']); ?> - Impresario</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo assetUrl('assets/css/style.css'); ?>">
 </head>
 <body>
     <header class="navbar">
@@ -118,6 +118,7 @@ $timelineEvents = $stmt->fetchAll();
     <!-- Writer Mode Toolbar -->
     <div class="page-toolbar">
         <h3 class="toolbar-title"><i class="fas fa-pen"></i> Mode Écrivain</h3>
+        
         <div class="toolbar-links">
             <a href="characters.php?id=<?php echo $projectId; ?>" class="toolbar-link" title="Gérer les personnages">
                 <i class="fas fa-users"></i> Personnages
@@ -139,14 +140,15 @@ $timelineEvents = $stmt->fetchAll();
                     📋 Word
                 </button>
             </form>
-            <div class="toolbar-actions">
-                <button class="btn btn-primary btn-small" data-modal-trigger="edit-project-modal" title="Modifier le projet">
-                    <i class="fas fa-edit"></i> Modifier
-                </button>
-                <button class="btn btn-danger btn-small" data-modal-trigger="delete-project-modal" title="Supprimer le projet">
-                    <i class="fas fa-trash"></i> Supprimer
-                </button>
-            </div>
+        </div>
+        
+        <div class="toolbar-actions">
+            <button class="btn btn-primary btn-small" data-modal-trigger="edit-project-modal" title="Modifier le projet">
+                <i class="fas fa-edit"></i> Modifier
+            </button>
+            <button class="btn btn-danger btn-small" data-modal-trigger="delete-project-modal" title="Supprimer le projet">
+                <i class="fas fa-trash"></i> Supprimer
+            </button>
         </div>
     </div>
     
@@ -368,8 +370,8 @@ $timelineEvents = $stmt->fetchAll();
     </div>
 
     <!-- Boutons d'action -->
-    <script src="assets/js/theme-manager.js"></script>
-    <script src="assets/js/dynamic-sizer.js"></script>
+    <script src="<?php echo assetUrl('assets/js/theme-manager.js'); ?>"></script>
+    <script src="<?php echo assetUrl('assets/js/dynamic-sizer.js'); ?>"></script>
     
     <script>
         // Gestion des modales

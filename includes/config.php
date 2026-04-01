@@ -1,4 +1,7 @@
 <?php
+// Version de l'app pour cache busting des assets
+define('ASSET_VERSION', filemtime(__DIR__ . '/../assets/css/style.css'));
+
 // Configuration de la connexion PostgreSQL
 define('DB_HOST', 'localhost');
 define('DB_PORT', '5432');

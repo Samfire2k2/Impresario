@@ -154,6 +154,15 @@ $gradient = generateProjectGradient($pdo, $projectId, 'array');
             user-select: none;
         }
 
+        .intrigue-column-footer .btn {
+            cursor: pointer !important;
+        }
+
+        .column-scene-item:hover,
+        .btn:hover {
+            cursor: pointer;
+        }
+
         .column-scene-item:active {
             cursor: grabbing;
         }
